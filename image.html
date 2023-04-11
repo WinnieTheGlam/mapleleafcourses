@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>image</title>
+    </head>
+    <style>
+	html{
+	scroll-behavior:smooth;
+	scroll-padding-top:140px;
+	}
+	
+	#courses-content{
+	position:relative;
+	top:170px;
+	} 
+    
+    #heading{
+	position:fixed;
+	top:0px;
+	background-color:rgb(132,23,44);
+	height:135px;
+	width:100%;
+	top:0px;
+	left:0px;
+	right:0px;
+	text-align:center;
+	font-size:30px;
+	font-family:sans-serif;
+	color:rgb(250,234,226);
+	font-weight:bold;
+	z-index:10;
+	cursor:default;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	}
+	
+	#bgimage{
+	opacity:0.8;
+	position:fixed;
+	top:0px;
+	left:0px;
+	min-height:100%;
+	min-width:100%;
+	inset:0;
+	z-index:-1;
+	
+	}
+    
+    
+    
+    #courses li{
+	display:inline;
+	line-height:60px;
+	}
+	#catalog1{
+	position:relative;
+	top:160px;
+	left:10px;
+	}
+	#calculus{
+	transition-duration:0.35s;
+	background-color:rgb(227, 82, 152);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(227, 82, 152);
+	padding:7px 16px;
+	
+	
+	}
+    #calculus:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(227, 82, 152);
+	cursor:pointer;
+	}
+	
+	#leadership{
+	transition-duration:0.35s;
+	background-color:rgb(0, 91, 187);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(0, 91, 187);
+	padding:7px 16px;
+	
+	}
+    #leadership:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(0, 91, 187);
+	cursor:pointer;
+	}
+	#creative{
+	transition-duration:0.35s;
+	background-color:rgb(255, 213, 0);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(255, 213, 0);
+	padding:7px 16px;
+	
+	}
+    #creative:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(255, 213, 0);
+	cursor:pointer;
+	}
+	#physics{
+	transition-duration:0.35s;
+	background-color:rgb(100, 100, 219);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(100, 100, 219);
+	padding:7px 16px;
+	
+	}
+    
+    #physics:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(100, 100, 219);
+	cursor:pointer;
+	}
+	#economics{
+	transition-duration:0.35s;
+	background-color:rgb(79, 176, 104);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(79, 176, 104);
+	padding:7px 16px;
+	
+	}
+    
+    #economics:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(79, 176, 104);
+	cursor:pointer;
+	}
+	#chemistry{
+	transition-duration:0.35s;
+	background-color:rgb(230, 115, 62);
+	color:white;
+	font-size:30px;
+	border:none;
+	border:solid;
+	border-color:rgb(230, 115, 62);
+	padding:7px 16px;
+	
+	}
+    
+    #chemistry:hover{
+	transition-duration:0.35s;
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:rgb(230, 115, 62);
+	cursor:pointer;
+	}
+	
+	.content{
+	border-style:solid;
+	border-color:azure;
+	background-color:azure;
+	padding:10px;
+	margin:20px 50px;
+	}
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    
+    </style>
+    
+    <body>
+    
+        <div id="bg">
+		<img id="bgimage" src="https://ts1.cn.mm.bing.net/th/id/R-C.68947fe93f25c5e41d29f7cdf739cac3?rik=oFJwAd0flNBouQ&riu=http%3a%2f%2feskipaper.com%2fimages%2fautumn-maple-leaf-1.jpg&ehk=LrpEr151SbuJzfOKkNaHjWdD51w%2bmQ77nIgrQbc%2fHbQ%3d&risl=&pid=ImgRaw&r=0">
+		</div>
+		<div id="heading">
+        <h1 class="title">World School Courses</h1>
+		</div>
+        <div id="catalog1">
+        
+        <ul id="courses">
+            <li><a href="#calculus-content"><button id="calculus">Calculus</button></a> </li>
+            <li><a href="#leadership-content"><button id="leadership">Leadership</button></a></li>
+            <li><a href="#creative-content"><button id="creative">Creative thinking</button></a></li>
+            <li><a href="#physics-content"><button id="physics">Physics </button></a></li>
+            <li ><a href="#economics-content"><button id="economics">Economics </button></a></li>
+            <li ><a href="#chemistry-content"><button id="chemistry" >Chemistry</button></a></li>
+        </ul>
+		</div>
+        <div id="courses-content">
+		<div class="content" id="calculus-content">
+		<h3>calculus</h3>
+		<p>calculus, branch of mathematics concerned with the calculation of instantaneous rates of change (differential calculus) and the summation of infinitely many small factors to determine some whole (integral calculus). Two mathematicians, Isaac Newton of England and Gottfried Wilhelm Leibniz of Germany, share credit for having independently developed the calculus in the 17th century. Calculus is now the basic entry point for anyone wishing to study physics, chemistry, biology, economics, finance, or actuarial science. Calculus makes it possible to solve problems as diverse as tracking the position of a space shuttle or predicting the pressure building up behind a dam as the water rises. Computers have become a valuable tool for solving calculus problems that were once considered impossibly difficult.</p>
+		</div>
+		<div class="content" id="leadership-content">
+        <h3>Leadership</h3>
+        <p>	In this business and management course, you will learn how to achieve organizational success through positive and growth-focused employee management. You will also learn the concepts within personal leadership development and how to apply skill-based competencies within an organization. All leaders, to a certain degree, do the same thing. Whether you’re talking about an executive, manager, sports coach, or schoolteacher, leadership is about guiding and impacting outcomes, enabling groups of people to work together to accomplish what they couldn’t do working individually. In this sense, leadership is something you do, not something you are. Some people in formal leadership positions are poor leaders, and many people exercising leadership have no formal authority. It is their actions, not their words, that inspire trust and energy.
+        </p></div>
+		<div class="content" id="creative-content">
+        <h3>Creative Thinking</h3>
+        <p>	So what is creative thinking? Creative thinking is the process of nurturing your imagination allowing you to “think out of the box”. Being able to train your mind to think creatively helps you invent, problem-solve, create and communicate in fresh, new ways. Creative thinkers are in high demand in the job market and creative thinking is one of the key skills needed in future jobs according to a recent report by the World Economic Forum. So, let's develop your creative thinking skills!In this article, we will take you through a step by step process of how to improve your creative thinking skills. You will learn about different ways used to help you become more open-minded, innovative and creative. 
+        </p></div>
+		<div class="content" id="physics-content">
+        <h3>Physics</h3>
+        <p>	physics, science that deals with the structure of matter and the interactions between the fundamental constituents of the observable universe. In the broadest sense, physics (from the Greek physikos) is concerned with all aspects of nature on both the macroscopic and submicroscopic levels. Its scope of study encompasses not only the behaviour of objects under the action of given forces but also the nature and origin of gravitational, electromagnetic, and nuclear force fields. Its ultimate objective is the formulation of a few comprehensive principles that bring together and explain all such disparate phenomena. 
+        </p></div>
+		<div class="content" id="economics-content">
+        <h3>Economics</h3>
+        <p>	Economics, social science that seeks to analyze and describe the production, distribution, and consumption of wealth. In the 19th century economics was the hobby of gentlemen of leisure and the vocation of a few academics; economists wrote about economic policy but were rarely consulted by legislators before decisions were made. Today there is hardly a government, international agency, or large commercial bank that does not have its own staff of economists. Many of the world’s economists devote their time to teaching economics in colleges and universities around the world, but most work in various research or advisory capacities, either for themselves (in economics consulting firms), in industry, or in government. Still others are employed in accounting, commerce, marketing, and business administration; although they are trained as economists, their occupational expertise falls within other fields. Indeed, this can be considered “the age of economists,” and the demand for their services seems insatiable. Supply responds to that demand, and in the United States alone some 400 institutions of higher learning grant about 900 new Ph.D.’s in economics each year.
+        </p></div>
+		<div class="content" id="chemistry-content">
+        <h3>Chemistry</h3>
+        <p>	Chemistry, the science that deals with the properties, composition, and structure of substances (defined as elements and compounds), the transformations they undergo, and the energy that is released or absorbed during these processes. Every substance, whether naturally occurring or artificially produced, consists of one or more of the hundred-odd species of atoms that have been identified as elements. Although these atoms, in turn, are composed of more elementary particles, they are the basic building blocks of chemical substances; there is no quantity of oxygen, mercury, or gold, for example, smaller than an atom of that substance. Chemistry, therefore, is concerned not with the subatomic domain but with the properties of atoms and the laws governing their combinations and how the knowledge of these properties can be used to achieve specific purposes.
+		</p></div>
+		</div>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+  
+
+
+    </body>
+	<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</html>
+
+
